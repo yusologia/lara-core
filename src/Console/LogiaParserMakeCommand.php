@@ -47,7 +47,7 @@ class LogiaParserMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return $this->resolveStubPath('../../stubs/parser.stub');
+        return $this->resolveStubPath('/../../stubs/parser.stub');
     }
 
     /**
