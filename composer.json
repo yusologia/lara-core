@@ -12,7 +12,10 @@
     "psr-4": {
       "Logia\\Core\\": "src/"
     },
-    "files": []
+    "files": [
+      "src/Misc/helpers.php",
+      "src/Misc/responses.php"
+    ]
   },
   "require": {
     "php": "8.*",
