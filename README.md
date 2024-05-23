@@ -1,9 +1,9 @@
 Yusologia Laravel Core Configuration
 ======
 
-[![Version](http://poser.pugx.org/yusologia/lara-core)](https://packagist.org/packages/globalxtreme/response)
-[![Total Downloads](http://poser.pugx.org/yusologia/lara-core/downloads)](https://packagist.org/packages/globalxtreme/response)
-[![License](http://poser.pugx.org/yusologia/lara-core/license)](https://packagist.org/packages/globalxtreme/response)
+[![Version](http://poser.pugx.org/yusologia/lara-core)](https://packagist.org/packages/yusologia/lara-core)
+[![Total Downloads](http://poser.pugx.org/yusologia/lara-core/downloads)](https://packagist.org/packages/yusologia/lara-core)
+[![License](http://poser.pugx.org/yusologia/lara-core/license)](https://packagist.org/packages/yusologia/lara-core)
 
 ### Install with composer
 
