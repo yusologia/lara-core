@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Logia\\Core\\ResponseServiceProvider"
+        "Logia\\Core\\CoreServiceProvider"
       ]
     }
   },
