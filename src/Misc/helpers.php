@@ -1,7 +1,7 @@
 <?php
 
-use Logia\Core\Response;
-use Logia\Core\Status;
+use Logia\Core\Response\Response;
+use Logia\Core\Response\Status;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 if (!function_exists("success")) {
