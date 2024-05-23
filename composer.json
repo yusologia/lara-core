@@ -1,0 +1,33 @@
+{
+  "name": "yusologia/lara-core",
+  "description": "Yusologia Laravel Core Configuration",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuswa",
+      "email": "yuswa98@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Logia\\Core\\": "src/"
+    },
+    "files": []
+  },
+  "require": {
+    "php": "8.*",
+    "illuminate/support": "^8.83|^9.0|^10.0|^11.0",
+    "illuminate/console": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Logia\\Core\\ResponseServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
