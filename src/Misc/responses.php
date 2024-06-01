@@ -31,7 +31,7 @@ if (!function_exists("errUserNotFound")) {
 if (!function_exists("errUnauthenticated")) {
     function errUnauthenticated($internalMsg = "")
     {
-        error(401, "The token has expired. Please re-login!!", $internalMsg);
+        error(401, "Your token is invalid. please re-login!!", $internalMsg);
     }
 }
 
