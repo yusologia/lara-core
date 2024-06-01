@@ -2,9 +2,9 @@
 
 namespace Logia\Core\Exception;
 
-use Logia\Core\Response;
-use Logia\Core\Status;
 use Exception;
+use Logia\Core\Response\Response;
+use Logia\Core\Response\Status;
 
 class ErrorException extends Exception
 {

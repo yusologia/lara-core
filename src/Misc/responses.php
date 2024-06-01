@@ -10,7 +10,7 @@ if (!function_exists("errOccurred")) {
 if (!function_exists("errCredentialIncorrect")) {
     function errCredentialIncorrect($internalMsg = "")
     {
-        error(400, "The provided credentials are incorrect", $internalMsg);
+        error(400, "The credentials provided are incorrect!!", $internalMsg);
     }
 }
 
@@ -24,14 +24,14 @@ if (!function_exists("errUnableToGenerateToken")) {
 if (!function_exists("errUserNotFound")) {
     function errUserNotFound($internalMsg = "")
     {
-        error(401, "User request not found. Must be login first", $internalMsg);
+        error(401, "User not found. Please login first!!", $internalMsg);
     }
 }
 
 if (!function_exists("errUnauthenticated")) {
     function errUnauthenticated($internalMsg = "")
     {
-        error(401, "Unauthenticated.", $internalMsg);
+        error(401, "The token has expired. Please re-login!!", $internalMsg);
     }
 }
 
@@ -53,12 +53,5 @@ if (!function_exists("errPermissionRestricted")) {
     function errPermissionRestricted($internalMsg = "")
     {
         error(401, "Error. User\'s permission restricted", $internalMsg);
-    }
-}
-
-if (!function_exists("errMessageBrokerFailedNotFound")) {
-    function errMessageBrokerFailedNotFound($internalMsg = "")
-    {
-        error(404, "Component not found", $internalMsg);
     }
 }
