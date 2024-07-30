@@ -68,7 +68,7 @@ if (!function_exists("pagination")) {
     function pagination($data)
     {
         if ($data instanceof LengthAwarePaginator) {
-            $totalPage = $data->total();
+            $totalPage = $data->lastPage();
             $currentPage = $data->currentPage();
 
             $next = $currentPage;
@@ -83,10 +83,10 @@ if (!function_exists("pagination")) {
 
             return [
                 'count' => $data->count(),
-                'currentPage' => $data->currentPage(),
-                'perPage' => $data->perPage(),
                 'total' => $data->total(),
-                'totalPage' => $data->lastPage(),
+                'currentPage' => $currentPage,
+                'perPage' => $data->perPage(),
+                'totalPage' => $totalPage,
                 'links' => [
                     'next' => $next,
                     'previous' => $prev
