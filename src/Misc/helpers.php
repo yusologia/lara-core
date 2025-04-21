@@ -50,9 +50,14 @@ if (!function_exists("exception")) {
      * @param $exception
      *
      * @return mixed
+     * @throws \Logia\Core\Exception\ErrorException
      */
     function exception($exception)
     {
+        if (!($exception instanceof \Exception)) {
+            throw new \Logia\Core\Exception\ErrorException(500, "Internal server error!", $exception->getMessage());
+        }
+
         throw $exception;
     }
 

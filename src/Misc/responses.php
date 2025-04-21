@@ -10,7 +10,7 @@ if (!function_exists("errOccurred")) {
 if (!function_exists("errCredentialIncorrect")) {
     function errCredentialIncorrect($internalMsg = "")
     {
-        error(400, "The credentials provided are incorrect!!", $internalMsg);
+        error(400, "Username or password is wrong!!", $internalMsg);
     }
 }
 
@@ -52,6 +52,6 @@ if (!function_exists("errNumberGeneratorInvalid")) {
 if (!function_exists("errPermissionRestricted")) {
     function errPermissionRestricted($internalMsg = "")
     {
-        error(403, "Error. User\'s permission restricted", $internalMsg);
+        error(403, "User\'s permission restricted", $internalMsg);
     }
 }
