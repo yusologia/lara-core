@@ -35,7 +35,7 @@ if (!function_exists("error")) {
      * @param array|null $attributes
      *
      * @return \Illuminate\Http\JsonResponse|mixed
-     * @throws ErrorException
+     * @throws \Logia\Core\Exception\ErrorException
      */
     function error(int $httpStatus = 500, string $message = 'An error occurred!', string|null $internalMsg = null, array|null $attributes = null)
     {
